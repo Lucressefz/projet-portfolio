@@ -21,21 +21,32 @@ theme
     --bgcolor-buttun : #EB8585;
 }
 
-li {
-    display: inline;
-    float: left;
-}
 
-ul{
-    overflow: hidden;
-}
-  
-a {
+header{
     display: flex;
-    padding: 1rem;
-    background-color: #EB8585;
-  }
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 2rem;
 
-body{
-    background-color: var(--bgcolor);
+}
+header nav ul li{
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: .4rem;
+    background-color: #f18d8d;
+    a{
+        display: block;
+        width: 100%;
+    }
+}
+
+img{
+    display: none; /* desactiver le display */
 }

@@ -11,12 +11,12 @@ html{
 }
 
 body{
+    background-color: var(--bgcolor);
     font: 1.6rem 'karla', sans-serif;
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100svh;
-    background-color: var(--bgcolor);
     line-height: 1.6;
     letter-spacing: .1rem;
 }
