@@ -1,10 +1,30 @@
-
 html{
     font-size: 62.5%;
 }
 
+*{
+    box-sizing: border-box;
+}
 
 body{
-    background: var(--bgcolor);
+    font: 1.6rem ;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100svh;
+    background-color: var(--bgcolor);
+    line-height: 1.6;
+    letter-spacing: .1rem;
+}
 
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
 }
