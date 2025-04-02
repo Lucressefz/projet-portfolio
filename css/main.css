@@ -1,0 +1,22 @@
+@import url(./reset.css);
+
+/*
+theme
+
+#F9F0E3
+#1E1E1E
+#000000
+#EB8585
+#CF2E2E
+
+
+*/
+
+:root{
+
+    --bgcolor: #f9f0e3;
+    --clor-text:#1E1E1E;
+    --color-title: #000000;
+    --bgcolor-footer: #cf2e2e;
+    --bgcolor-buttun : #EB8585;
+}
