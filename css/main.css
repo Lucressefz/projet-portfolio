@@ -21,3 +21,6 @@ theme
     --bgcolor-buttun : #EB8585;
 }
 
+body{
+    background-color: var(--bgcolor);
+}
