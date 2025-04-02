@@ -21,6 +21,21 @@ theme
     --bgcolor-buttun : #EB8585;
 }
 
+li {
+    display: inline;
+    float: left;
+}
+
+ul{
+    overflow: hidden;
+}
+  
+a {
+    display: flex;
+    padding: 1rem;
+    background-color: #EB8585;
+  }
+
 body{
     background-color: var(--bgcolor);
 }
