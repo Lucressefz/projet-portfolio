@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Métadonnées essentielles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de développeur - Découvrez mes compétences, projets et expériences">
+    <meta name="author" content="Lucresse Zeufack">
+    
+    <!-- Titre de la page -->
+    <title>Portfolio - Développeur</title>
+    
+    <!-- Bibliothèque Particles.js pour les particules animées (fichier local) -->
+    <script src="js/particles.min.js"></script>
+    
+    <!-- Lien vers la future feuille de style CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- ========================================
+         EN-TÊTE ET NAVIGATION
+         ======================================== -->
+    <header id="header">
+        <div class="container">
+            <!-- Logo ou nom -->
+            <div class="logo">
+                <h1>Lucresse Zeufack</h1>
+                <p class="tagline">Développeur Web</p>
+            </div>
+            
+            <!-- Menu de navigation -->
+            <nav id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#formations">Formations</a></li>
+                    <li><a href="#experiences">Expériences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- Lien vers le CV PDF -->
+                <a href="assets/cv.pdf" class="cv-link" target="_blank" download>Mon CV</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================
+         CONTENU PRINCIPAL
+         ======================================== -->
+    <main id="main-content">
+        
+        <!-- ========================================
+             SECTION HERO : PAGE D'ACCUEIL AVEC PARTICULES
+             ======================================== -->
+        <section id="hero" class="hero-section">
+            <!-- Conteneur pour les particules animées (géré par Particles.js) -->
+            <div id="particles-js"></div>
+            
+            <!-- Contenu principal de la page hero -->
+            <div class="hero-content">
+                <!-- Nom en grand au centre -->
+                <h1 class="hero-name">Lucresse Zeufack</h1>
+                
+                <!-- Phrase d'accroche -->
+                <p class="hero-tagline">Je développe des sites web et des applications.</p>
+                
+                <!-- Bouton de contact -->
+                <a href="#contact" class="hero-button">
+                    <span class="button-icon">💬</span>
+                    Contactez-moi
+                </a>
+            </div>
+        </section>
+        
+        <!-- ========================================
+             SECTION 1 : À PROPOS DE MOI
+             ======================================== -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <!-- Titre de la section -->
+                <h2 class="section-title">À propos de moi</h2>
+                
+                <!-- Contenu de la section -->
+                <div class="about-content">
+                    <!-- Image de profil -->
+                    <div class="profile-image">
+                        <img src="assets/images/profile.jpeg" alt="Photo de profil">
+                    </div>
+                    
+                    <!-- Texte de présentation -->
+                    <div class="about-text">
+                        <p class="intro">
+                            Bonjour, je suis Lucresse Zeufack, développeuse passionné par la création d'applications web modernes et performantes.
+                        </p>
+                        <p>
+                            Avec [X] années d'expérience dans le développement web, je me spécialise dans [vos spécialités]. 
+                            Mon objectif est de créer des solutions innovantes qui répondent aux besoins des utilisateurs.
+                        </p>
+                        <p>
+                            Je suis toujours à la recherche de nouveaux défis et d'opportunités pour améliorer mes compétences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 2 : FORMATIONS
+             ======================================== -->
+        <section id="formations" class="section formations-section">
+            <div class="container">
+                <!-- Titre de la section -->
+                <h2 class="section-title">Formations</h2>
+                
+                <!-- Liste des formations -->
+                <div class="formations-list">
+                    
+                    <!-- Formation 1 -->
+                    <article class="formation-item">
+                        <div class="formation-header">
+                            <h3 class="formation-title">Titre de la formation</h3>
+                            <span class="formation-date">2020 - 2023</span>
+                        </div>
+                        <div class="formation-details">
+                            <p class="formation-school">Nom de l'établissement</p>
+                            <p class="formation-location">Ville, Pays</p>
+                            <p class="formation-description">
+                                Description de la formation, des compétences acquises et des projets réalisés.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Formation 2 -->
+                    <article class="formation-item">
+                        <div class="formation-header">
+                            <h3 class="formation-title">Titre de la formation</h3>
+                            <span class="formation-date">2018 - 2020</span>
+                        </div>
+                        <div class="formation-details">
+                            <p class="formation-school">Nom de l'établissement</p>
+                            <p class="formation-location">Ville, Pays</p>
+                            <p class="formation-description">
+                                Description de la formation, des compétences acquises et des projets réalisés.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Ajouter d'autres formations ici selon le même modèle -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 3 : EXPÉRIENCES PROFESSIONNELLES
+             ======================================== -->
+        <section id="experiences" class="section experiences-section">
+            <div class="container">
+                <!-- Titre de la section -->
+                <h2 class="section-title">Expériences professionnelles</h2>
+                
+                <!-- Liste des expériences -->
+                <div class="experiences-list">
+                    
+                    <!-- Expérience 1 -->
+                    <article class="experience-item">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Intitulé du poste</h3>
+                            <span class="experience-date">Janvier 2023 - Présent</span>
+                        </div>
+                        <div class="experience-details">
+                            <p class="experience-company">Nom de l'entreprise</p>
+                            <p class="experience-location">Ville, Pays</p>
+                            <ul class="experience-tasks">
+                                <li>Description des responsabilités et réalisations</li>
+                                <li>Tâche ou projet majeur réalisé</li>
+                                <li>Technologies utilisées et résultats obtenus</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Expérience 2 -->
+                    <article class="experience-item">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Intitulé du poste</h3>
+                            <span class="experience-date">Juin 2021 - Décembre 2022</span>
+                        </div>
+                        <div class="experience-details">
+                            <p class="experience-company">Nom de l'entreprise</p>
+                            <p class="experience-location">Ville, Pays</p>
+                            <ul class="experience-tasks">
+                                <li>Description des responsabilités et réalisations</li>
+                                <li>Tâche ou projet majeur réalisé</li>
+                                <li>Technologies utilisées et résultats obtenus</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Ajouter d'autres expériences ici selon le même modèle -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 4 : PROJETS
+             ======================================== -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <!-- Titre de la section -->
+                <h2 class="section-title">Mes projets</h2>
+                
+                <!-- Grille de projets -->
+                <div class="projects-grid">
+                    
+                    <!-- Projet 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project1.jpg" alt="Capture d'écran du projet 1">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Nom du projet</h3>
+                            <p class="project-description">
+                                Description courte du projet, des objectifs et des fonctionnalités principales.
+                            </p>
+                            <ul class="project-technologies">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">Voir le projet</a>
+                                <a href="#" class="project-link" target="_blank">Code source</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="Capture d'écran du projet 2">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Nom du projet</h3>
+                            <p class="project-description">
+                                Description courte du projet, des objectifs et des fonctionnalités principales.
+                            </p>
+                            <ul class="project-technologies">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">Voir le projet</a>
+                                <a href="#" class="project-link" target="_blank">Code source</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 3 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="Capture d'écran du projet 3">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Nom du projet</h3>
+                            <p class="project-description">
+                                Description courte du projet, des objectifs et des fonctionnalités principales.
+                            </p>
+                            <ul class="project-technologies">
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">Voir le projet</a>
+                                <a href="#" class="project-link" target="_blank">Code source</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Ajouter d'autres projets ici selon le même modèle -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 5 : OUTILS DE DÉVELOPPEMENT
+             ======================================== -->
+        <section id="tools" class="section tools-section">
+            <div class="container">
+                <!-- Titre de la section -->
+                <h2 class="section-title">Outils de développement</h2>
+                
+                <!-- Grille des outils -->
+                <div class="tools-grid">
+                    
+                    <!-- Catégorie : Éditeurs de code -->
+                    <div class="tools-category">
+                        <h3 class="category-title">Éditeurs de code</h3>
+                        <ul class="tools-list">
+                            <li class="tool-item">
+                                <span class="tool-name">Visual Studio Code</span>
+                            </li>
+                            <li class="tool-item">
+                                <span class="tool-name">Sublime Text</span>
+                            </li>
+                            <li class="tool-item">
+                                <span class="tool-name">WebStorm</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Catégorie : Contrôle de version -->
+                    <div class="tools-category">
+                        <h3 class="category-title">Contrôle de version</h3>
+                        <ul class="tools-list">
+                            <li class="tool-item">
+                                <span class="tool-name">Git</span>
+                            </li>
+                            <li class="tool-item">
+                                <span class="tool-name">GitHub</span>
+                            </li>
+                            <li class="tool-item">
+                                <span class="tool-name">GitLab</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Catégorie : Design et prototypage -->
+                    <div class="tools-category">
+                        <h3 class="category-title">Design et prototypage</h3>
+                        <ul class="tools-list">
+                            <li class="tool-item">
+                                <span class="tool-name">Figma</span>
+                            </li>
+                            <li class="tool-item">
+                                <span class="tool-name">Adobe XD</span>
+                            </li>
+                            <li class="tool-item">
+                                <span class="tool-name">Sketch</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Catégorie : Autres outils -->
+                    <div class="tools-category">
+                        <h3 class="category-title">Autres outils</h3>
+                        <ul class="tools-list">
+                            <li class="tool-item">
+                                <span class="tool-name">Docker</span>
+                            </li>
+                            <li class="tool-item">
+                                <span class="tool-name">Postman</span>
+                            </li>
+                            <li class="tool-item">
+                                <span class="tool-name">npm / yarn</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Ajouter d'autres catégories d'outils selon vos besoins -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 6 : COMPÉTENCES
+             ======================================== -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <!-- Titre de la section -->
+                <h2 class="section-title">Compétences techniques</h2>
+                
+                <!-- Grille des compétences -->
+                <div class="skills-grid">
+                    
+                    <!-- Compétence 1 : Frontend -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Frontend</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">CSS3 / SASS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="80"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="75"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Compétence 2 : Backend -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Backend</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="70"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="75"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="65"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Compétence 3 : Bases de données -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Bases de données</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="80"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="70"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">PostgreSQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="65"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Compétence 4 : Autres compétences -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Autres</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span class="skill-name">Git / GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Responsive Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">API REST</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="75"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Ajouter d'autres catégories de compétences selon vos besoins -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 7 : CONTACT
+             ======================================== -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <!-- Titre de la section -->
+                <h2 class="section-title">Me contacter</h2>
+                
+                <!-- Texte d'introduction -->
+                <p class="contact-intro">
+                    Vous avez un projet en tête ou souhaitez discuter d'une opportunité ? 
+                    N'hésitez pas à me contacter via le formulaire ci-dessous.
+                </p>
+                
+                <!-- Formulaire de contact -->
+                <form id="contact-form" class="contact-form" action="#" method="POST">
+                    
+                    <!-- Champ : Nom -->
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Votre nom" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Champ : Email -->
+                    <div class="form-group">
+                        <label for="email">Adresse email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="votre.email@exemple.com" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Champ : Sujet (optionnel) -->
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            placeholder="Sujet de votre message"
+                        >
+                    </div>
+
+                    <!-- Champ : Message -->
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="6" 
+                            placeholder="Votre message..." 
+                            required
+                        ></textarea>
+                    </div>
+
+                    <!-- Bouton d'envoi -->
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">
+                            Envoyer le message
+                        </button>
+                    </div>
+                    
+                </form>
+
+                <!-- Message de confirmation (caché par défaut, sera affiché via JavaScript) -->
+                <div id="form-message" class="form-message" style="display: none;">
+                    <p>Merci pour votre message ! Je vous répondrai dans les plus brefs délais.</p>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+       
+            <div class="footer-info">
+                <p>&copy; 2024 Lucresse Zeufack. Tous droits réservés.</p>
+            </div>
+           
+
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="#" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" target="_blank" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+ 
+    <script src="script.js"></script>
+    
+</body>
+</html>

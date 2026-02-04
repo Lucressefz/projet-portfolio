@@ -1,0 +1,70 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;  /* Fond noir */
+    color: #ffffff;             /* Texte blanc */
+    font-family: Arial, sans-serif;
+}
+
+/* Section Hero avec particules */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;              /* Hauteur plein écran */
+    background-color: #000000;  /* Fond noir */
+    overflow: hidden;
+}
+
+/* Conteneur des particules */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Contenu au centre de la page hero */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;                /* Au-dessus des particules */
+}
+
+/* Nom en grand */
+.hero-name {
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+/* Phrase d'accroche */
+.hero-tagline {
+    font-size: 1.5rem;
+    color: #cccccc;
+    margin-bottom: 2rem;
+}
+
+/* Bouton contactez-moi */
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;  /* Bleu */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #0056b3;  /* Bleu foncé au survol */
+}
