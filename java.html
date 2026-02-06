@@ -1,11 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projet Gestion du Personnel - M2L</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="../index.html" class="back-to-portfolio">← Retour au Portfolio</a>
     
+    <div class="container">
+        <header>
+            <h1>🏆 Gestion du Personnel M2L</h1>
+            <p>Application Java complète de gestion des employés des ligues sportives</p>
+        </header>
+        
+        <div class="content">
+            <section id="resume">
+                <h2>Résumé du Projet</h2>
+                <div class="hero-summary">
+                    <h3>Contexte</h3>
+                    <p>
+                        La Maison des Ligues de Lorraine (M2L) héberge plusieurs ligues sportives régionales. 
+                        Chaque ligue emploie du personnel pour gérer ses activités. Ce projet répond au besoin 
+                        de centraliser et sécuriser la gestion de tous ces employés au sein d'une application 
+                        unique et robuste.
+                    </p>
+                    
+                    <h3>Objectif</h3>
+                    <p>
+                        Développer une application Java permettant de gérer l'ensemble du personnel des ligues : 
+                        création, modification, suppression d'employés, gestion des administrateurs, validation 
+                        des dates de contrat, et persistance des données. L'application garantit l'intégrité des 
+                        données grâce à un système de validation strict et une gestion fine des droits d'accès.
+                    </p>
+                    
+                    <h3>Technologies</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Java SE 11+</span>
+                        <span class="tech-badge">MySQL / JDBC</span>
+                        <span class="tech-badge">JUnit 5</span>
+                        <span class="tech-badge">Sérialisation Java</span>
+                        <span class="tech-badge">POO & Design Patterns</span>
+                    </div>
+                    
+                    <h3>Réalisations</h3>
+                    <p>
+                        Implémentation complète d'un système de gestion avec validation des dates (dateArrivée < dateDépart), 
+                        création d'exceptions personnalisées, développement d'une couche de persistance flexible 
+                        (sérialisation ou JDBC), interface console interactive, et suite complète de tests unitaires 
+                        garantissant la fiabilité du code.
+                    </p>
+                </div>
+            </section>
+            
+            <section id="fonctionnalites">
+                <h2>Fonctionnalités Principales</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h4>Gestion des Ligues</h4>
+                        <p>Création, modification et suppression de ligues sportives avec assignation d'administrateurs</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Gestion des Employés</h4>
+                        <p>Ajout d'employés avec validation automatique des dates de contrat et gestion complète des informations</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Contrôle des Droits</h4>
+                        <p>Système de droits avec root, administrateurs de ligue, et employés standards</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Validation des Données</h4>
+                        <p>Exceptions personnalisées pour garantir la cohérence (dates, affectations, suppressions)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Persistance Flexible</h4>
+                        <p>Sauvegarde par sérialisation Java ou base de données MySQL via JDBC</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Tests Unitaires</h4>
+                        <p>Suite complète de tests JUnit couvrant les cas nominaux et les exceptions</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="images">
+                <h2>Captures d'Écran</h2>
+                <div class="images-grid">
+                    <div class="image-container">
+                        <img src="assets/images/appli/Accueil.jpg" alt="Menu Principal">
+                        <div class="caption">Menu principal avec authentification root</div>
+                    </div>
+                    
+                    <div class="image-container">
+                        <img src="assets/images/appli/ligue.jpg" alt="Gestion des Ligues">
+                        <div class="caption">Interface de gestion des ligues</div>
+                    </div>
+                    
+                    <div class="image-container">
+                        <img src="assets/images/appli/gérer-root.jpg" alt="Gestion du Compte Root">
+                        <div class="caption">Modification du compte administrateur</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="architecture">
+                <h2>Architecture</h2>
+                <div class="image-container">
+                    <img src="assets/images/appli/Gestion du personnel des ligues.jpeg" alt="Arborescence du Projet">
+                    <div class="caption">Structure des packages et organisation du code</div>
+                </div>
+            </section>
+            
+            <section id="mcd">
+                <h2>Modèle de Données</h2>
+                <div class="image-container" >
+                    <img src="assets/images/appli/Mcd.2.jpg" alt="MCD du Projet">
+                    <div class="caption">Modèle Conceptuel de Données - Relations entre Ligues et Employés</div>
+                </div>
+            </section>
+            
+            <section id="statistiques">
+                <h2>Statistiques du Projet</h2>
+                <div class="features-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Classes Java</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Tests Unitaires</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Exceptions Personnalisées</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Modes de Persistance</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="liens">
+                <h2>Documentation & Ressources</h2>
+                <div class="links-section">
+                    <a href="https://github.com/Squid-Nayth/Atelier-Pro" class="link-card" target="_blank">
+                        <h3>📂 Code Source</h3>
+                        <p>Repository GitHub avec tout le code du projet</p>
+                    </a>
+                    <a href="documentation.pdf" class="link-card" target="_blank">
+                        <h3>📄 Documentation PDF</h3>
+                        <p>Documentation technique complète et détaillée</p>
+                    </a>
+                    <a href="#" class="link-card">
+                        <h3>📖 Javadoc</h3>
+                        <p>Documentation des classes et méthodes</p>
+                    </a>
+                    <a href="script.sql" class="link-card" download>
+                        <h3>🗃️ Script SQL</h3>
+                        <p>Création de la base de données MySQL</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 - Lucresse Zeufack</p>
+        </footer>
+    </div>
 </body>
 </html>

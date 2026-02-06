@@ -190,8 +190,7 @@ body {
 /* Texte de présentation  */
 .about-text {
     flex: 1;  /* Prend l'espace disponible */
-    order: 1;  /* S'affiche en premier (à gauche) */
-}
+    order: 1;  
 
 .about-text .intro {
     font-size: 1.2rem;
@@ -204,24 +203,20 @@ body {
     font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 1rem;
-    color: #cccccc;  /* Texte gris clair */
+    color: #cccccc;  
 }
 
 /* Image de profil */
 .profile-image {
     flex-shrink: 0;  /* Ne rétrécit pas */
-    order: 2;  /* S'affiche en second (à droite) */
+    order: 2;  
 }
 
 .profile-image img {
-    width: 300px;  /* Image plus grande */
-    height: 400px;  /* Image plus grande */
+    width: 300px; 
+    height: 400px;  
 }
 
-
-/* ========================================
-   SECTION PROJETS
-   ======================================== */
 
 /* Section projets */
 #projects {
@@ -344,3 +339,5 @@ body {
     font-size: 0.95rem;
 }
 }
+}
+

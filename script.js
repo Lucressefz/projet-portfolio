@@ -1,6 +1,3 @@
-// ========================================
-// CONFIGURATION DES PARTICULES (Particles.js)
-// ========================================
 
 // Attendre que la page soit complètement chargée
 document.addEventListener('DOMContentLoaded', function() {
