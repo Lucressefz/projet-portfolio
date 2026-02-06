@@ -191,7 +191,7 @@ body {
 .about-text {
     flex: 1;  /* Prend l'espace disponible */
     order: 1;  
-
+}
 .about-text .intro {
     font-size: 1.2rem;
     font-weight: 500;
@@ -335,8 +335,7 @@ body {
     transform: translateY(-3px); 
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);  
 
+}
 .project-link span {
     font-size: 0.95rem;
-}
-}
 }
