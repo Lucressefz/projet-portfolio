@@ -1,0 +1,262 @@
+/* ========================================
+   PAGE VEILLE TECHNOLOGIQUE
+   ======================================== */
+
+/* Intro de la veille */
+#veille-intro {
+    padding: 4rem 2rem 2rem;
+    background-color: #000000;
+    text-align: center;
+}
+
+.veille-main-title {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.veille-subtitle {
+    font-size: 1.3rem;
+    color: #999999;
+}
+
+/* Section Pourquoi */
+#veille-pourquoi {
+    padding: 4rem 2rem;
+    background-color: #000000;
+}
+
+.pourquoi-content {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.pourquoi-block {
+    margin-bottom: 3rem;
+}
+
+.pourquoi-block h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.pourquoi-block p {
+    color: #cccccc;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.pourquoi-block ul {
+    color: #cccccc;
+    padding-left: 1.5rem;
+    line-height: 1.7;
+}
+
+.pourquoi-block li {
+    margin-bottom: 0.5rem;
+}
+
+/* Section Outils de veille */
+#veille-outils {
+    padding: 4rem 2rem;
+    background-color: #000000;
+}
+
+.outils-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 1.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.outil-card {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #222222;
+}
+
+.outil-card h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.outil-card p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Section Articles */
+#veille-articles {
+    padding: 4rem 2rem;
+    background-color: #000000;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr));
+    gap: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* Carte d'article */
+.article-card-veille {
+    background-color: #1a1a1a;
+    border: 0.0625rem solid #222222;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.article-card-veille:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.5rem 1.25rem rgba(255, 255, 255, 0.1);
+    border-color: #333333;
+}
+
+.article-header-veille {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.article-date {
+    color: #999999;
+    font-size: 0.85rem;
+}
+
+.article-category {
+    color: #ffb3d9;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.article-title-veille {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.article-description {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.article-tags-veille {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.article-source {
+    color: #666666;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.btn-voir-article {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+    border: 0.0625rem solid #333333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-voir-article:hover {
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0.25rem 0.625rem rgba(255, 255, 255, 0.1);
+    border-color: #555555;
+}
+
+/* Section Sources */
+#veille-sources {
+    padding: 4rem 2rem;
+    background-color: #000000;
+}
+
+.sources-content {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.sources-intro {
+    color: #cccccc;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 2rem;
+}
+
+.source-category h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.source-category ul {
+    color: #cccccc;
+    padding-left: 1.5rem;
+    line-height: 1.7;
+}
+
+.source-category li {
+    margin-bottom: 0.5rem;
+}
+
+/* Lien actif dans la navbar */
+.nav-links a.active {
+    color: #ffb3d9;
+}
+
+/* Responsive */
+@media (max-width: 48rem) {
+    .veille-main-title {
+        font-size: 2rem;
+    }
+    
+    .veille-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .outils-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sources-grid {
+        grid-template-columns: 1fr;
+    }
+}
