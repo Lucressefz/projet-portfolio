@@ -226,7 +226,7 @@ body {
 }
 
 .formations-list {
-    max-width: 800px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
@@ -394,6 +394,7 @@ body {
     object-fit: contain;  /* Changé de 'cover' à 'contain' - image non zoomée */
     transition: transform 0.3s;
 }
+
 
 .project-card:hover .project-image img {
     transform: scale(1.02);  
