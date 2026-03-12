@@ -70,7 +70,7 @@ body {
 }
 
 .hero-button:hover {
-    background-color: #0056b3;  /* Bleu foncé au survol */
+    background-color: #ffb3d9;  
 }
 
 
@@ -140,7 +140,7 @@ body {
 
 /* Effet au survol des liens */
 .nav-links a:hover {
-    color: #007bff;
+    color: #ffb3d9;
 }
 
 /* Lien "Mon CV" */
@@ -156,7 +156,7 @@ body {
 
 /* Effet au survol du bouton CV */
 .cv-link:hover {
-    background-color: #0056b3;
+    background-color: #ffb3d9;
 }
 
 
