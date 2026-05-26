@@ -973,3 +973,128 @@ body {
 .social-links a:hover {
     color: #ffffff;
 }
+
+/* ========================================
+   TABLEAU DE SYNTHÈSE & CERTIFICATIONS
+   ======================================== */
+
+#tableau-synthese,
+#certifications {
+    padding: 4rem 2rem;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.synthese-intro,
+.certifications-intro {
+    text-align: center;
+    color: #cccccc;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Image du tableau de synthèse */
+.synthese-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.synthese-image {
+    width: 100%;
+    max-width: 90rem;
+    background-color: #1a1a1a;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.875rem rgba(255, 255, 255, 0.05);
+}
+
+/* Section de téléchargement */
+.download-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Grille de certifications */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* Item de certification */
+.certification-item {
+    background-color: #1a1a1a;
+    border: 0.0625rem solid #222222;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.certification-item:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.5rem 1.25rem rgba(255, 255, 255, 0.1);
+    border-color: #333333;
+}
+
+/* Image de certification */
+.certification-image {
+    background-color: #0a0a0a;
+    padding: 1rem;
+}
+
+.certification-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Infos de certification */
+.certification-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.certification-info h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.certification-date {
+    color: #999999;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+/* Bouton de téléchargement */
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.9rem;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    border: 0.0625rem solid #333333;
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    transform: translateY(-0.1875rem);
+    box-shadow: 0 0.375rem 1.25rem rgba(255, 255, 255, 0.2);
+    border-color: #555555;
+}
+
+.download-icon {
+    font-size: 0.95rem;
+}
+
