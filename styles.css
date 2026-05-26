@@ -973,13 +973,3 @@ body {
 .social-links a:hover {
     color: #ffffff;
 }
-
-.pdf-preview {
-    width: 100%;
-    max-width: 90rem;  
-    height: 50rem;    
-    background-color: #1a1a1a;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 0.5rem 1.875rem rgba(255, 255, 255, 0.05);
-}
