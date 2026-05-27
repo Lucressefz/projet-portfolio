@@ -73,7 +73,6 @@ body {
     background-color: #ffb3d9;  
 }
 
-
 /* Header principal */
 #header {
     background-color: #000000;
@@ -111,7 +110,6 @@ body {
     font-size: 0.9rem;
     margin: 0;
     text-align: center;
-  
 }
 
 /* Navigation */
@@ -159,7 +157,6 @@ body {
     background-color: #ffb3d9;
 }
 
-
 /* Section à propos */
 #about {
     padding: 4rem 2rem;
@@ -194,6 +191,7 @@ body {
     flex: 1;  /* Prend l'espace disponible */
     order: 1;  
 }
+
 .about-text .intro {
     font-size: 1.2rem;
     font-weight: 500;
@@ -220,7 +218,6 @@ body {
 }
 
 /*  SECTION FORMATIONS */
-
 #formations {
     padding: 4rem 2rem;
     background-color: #000000;
@@ -276,7 +273,6 @@ body {
 }
 
 /* SECTION EXPÉRIENCES */
-
 #experiences {
     padding: 4rem 2rem;
     background-color: #000000;
@@ -397,7 +393,6 @@ body {
     transition: transform 0.3s;
 }
 
-
 .project-card:hover .project-image img {
     transform: scale(1.02);  
 }
@@ -468,14 +463,13 @@ body {
 .project-link:hover {
     transform: translateY(-3px); 
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);  
-
 }
+
 .project-link span {
     font-size: 0.95rem;
 }
 
 /* SECTION OUTILS DE DÉVELOPPEMENT */
-
 #tools {
     padding: 4rem 2rem;
     background-color: #000000;
@@ -523,7 +517,6 @@ body {
 }
 
 /* SECTION COMPÉTENCES TECHNIQUES */
-
 #skills {
     padding: 4rem 2rem;
     background-color: #000000;
@@ -569,8 +562,6 @@ body {
 .skill-item:hover .skill-name {
     color: #ffffff;
 }
-
-
 
 /* Section contact */
 #contact {
@@ -694,7 +685,9 @@ body {
     font-size: 1rem;
 }
 
-/*section veille*/
+/* ========================================
+   SECTION VEILLE
+   ======================================== */
 
 /* Intro de la veille */
 #veille-intro {
@@ -784,6 +777,172 @@ body {
     line-height: 1.6;
 }
 
+/* ========================================
+   SOURCES VISUELLES (SCREENSHOTS)
+   ======================================== */
+
+#veille-sources-visuelles {
+    padding: 4rem 2rem;
+    background-color: #000000;
+}
+
+.sources-visuelles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.source-card {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.source-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: #1a1a1a;
+}
+
+.source-image {
+    width: 100%;
+    height: 12.5rem;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.source-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+}
+
+.source-card h3 {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    padding: 1.5rem 1rem;
+    font-weight: 600;
+}
+
+/* ========================================
+   TIMELINE - ÉVOLUTION DU SUJET
+   ======================================== */
+
+#veille-timeline {
+    padding: 4rem 2rem;
+    background-color: #000000;
+}
+
+.timeline-subject {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.timeline-item-subject {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid;
+}
+
+.timeline-item-subject.past {
+    background-color: #f5f5f5;
+    border-left-color: #999999;
+}
+
+.timeline-item-subject.present {
+    background-color: #f8f9fa;
+    border-left-color: #1a1a1a;
+}
+
+.timeline-item-subject.future {
+    background-color: #f0f0f0;
+    border-left-color: #ffb3d9;
+}
+
+.timeline-marker-subject {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-item-subject.future .timeline-marker-subject {
+    background-color: #ffb3d9;
+    color: #000000;
+}
+
+.timeline-item-subject h3 {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.timeline-item-subject p {
+    color: #666666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* ========================================
+   ACTUALITÉS CLÉS
+   ======================================== */
+
+#veille-actualites {
+    padding: 4rem 2rem;
+    background-color: #000000;
+}
+
+.actualites-list {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.actualite-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.actualite-item:last-child {
+    border-bottom: none;
+}
+
+.actualite-marker {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.actualite-content h4 {
+    font-size: 1rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.actualite-content p {
+    color: #666666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
 /* Section Articles */
 #veille-articles {
     padding: 4rem 2rem;
@@ -852,6 +1011,15 @@ body {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-bottom: 1.5rem;
+}
+
+.tag {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    padding: 0.25rem 0.7rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .article-footer {
@@ -933,7 +1101,6 @@ body {
 }
 
 /*  FOOTER */
-
 #footer {
     padding: 2rem;
     background-color: #000000;
@@ -1098,3 +1265,303 @@ body {
     font-size: 0.95rem;
 }
 
+/* ========================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   ======================================== */
+
+/* TABLETTE (768px et moins) */
+@media (max-width: 768px) {
+    /* Header */
+    #header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #main-nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    /* Hero */
+    .hero-name {
+        font-size: 1.5rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.1rem;
+    }
+
+    .hero-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* Titre sections */
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* À propos */
+    .about-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile-image img {
+        width: 200px;
+        height: 300px;
+    }
+
+    /* Projets */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Outils et compétences */
+    .tools-list,
+    .skills-list {
+        gap: 2rem;
+    }
+
+    /* Veille - Sources visuelles */
+    .sources-visuelles-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Veille - Timeline */
+    .timeline-subject {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    #footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* MOBILE (480px et moins) */
+@media (max-width: 480px) {
+    /* Body */
+    body {
+        font-size: 0.9rem;
+    }
+
+    /* Header */
+    #header {
+        padding: 0.75rem 1rem;
+    }
+
+    .logo img {
+        height: 2.5rem;
+    }
+
+    .logo .tagline {
+        font-size: 0.8rem;
+    }
+
+    /* Hero */
+    .hero-name {
+        font-size: 1.3rem;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+    }
+
+    /* Titre sections */
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* À propos */
+    .about-text .intro {
+        font-size: 1rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height: 200px;
+    }
+
+    /* Formation et expériences */
+    .formation-title,
+    .experience-title {
+        font-size: 1.1rem;
+    }
+
+    .formation-date,
+    .experience-date {
+        font-size: 0.8rem;
+    }
+
+    /* Projets */
+    .project-image {
+        height: 8rem;
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .project-description {
+        font-size: 0.85rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Contact */
+    #contact {
+        padding: 2rem 1rem;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    /* Veille */
+    .outils-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sources-visuelles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .source-card h3 {
+        padding: 1rem 0.75rem;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-title-veille {
+        font-size: 1.1rem;
+    }
+
+    .article-description {
+        font-size: 0.9rem;
+    }
+
+    /* Timeline veille */
+    .timeline-item-subject {
+        padding: 1rem;
+    }
+
+    .timeline-marker-subject {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .timeline-item-subject h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-item-subject p {
+        font-size: 0.85rem;
+    }
+
+    /* Actualités */
+    .actualite-item {
+        gap: 1rem;
+    }
+
+    .actualite-marker {
+        font-size: 1.3rem;
+    }
+
+    .actualite-content h4 {
+        font-size: 0.95rem;
+    }
+
+    .actualite-content p {
+        font-size: 0.85rem;
+    }
+
+    /* Footer */
+    #footer .container {
+        padding: 0 0.5rem;
+    }
+
+    .footer-info p {
+        font-size: 0.75rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-links a {
+        font-size: 0.75rem;
+    }
+}
+
+/* TRÈS PETIT ÉCRAN (max 320px) */
+@media (max-width: 320px) {
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .hero-name {
+        font-size: 1.1rem;
+    }
+
+    .hero-tagline {
+        font-size: 0.9rem;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .logo .tagline {
+        font-size: 0.7rem;
+    }
+
+    .formation-title,
+    .experience-title,
+    .article-title-veille {
+        font-size: 1rem;
+    }
+
+    .project-title {
+        font-size: 0.95rem;
+    }
+
+    .cv-link {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+}
