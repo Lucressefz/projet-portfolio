@@ -900,7 +900,7 @@ body {
 }
 
 /* ========================================
-   ACTUALITÉS CLÉS
+   ACTUALITÉS CLÉS 
    ======================================== */
 
 #veille-actualites {
@@ -915,10 +915,10 @@ body {
 
 .actualite-item {
     display: flex;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #333333;
 }
 
 .actualite-item:last-child {
@@ -926,20 +926,22 @@ body {
 }
 
 .actualite-marker {
-    font-size: 1.5rem;
+    font-size: 1rem;
     flex-shrink: 0;
+    margin-top: 0.3rem;
 }
 
 .actualite-content h4 {
-    font-size: 1rem;
-    color: #1a1a1a;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .actualite-content p {
-    color: #666666;
-    line-height: 1.6;
+    color: #cccccc;
+    line-height: 1.7;
     font-size: 0.95rem;
 }
 
@@ -1266,7 +1268,7 @@ body {
 }
 
 /* ========================================
-   MEDIA QUERIES - RESPONSIVE DESIGN
+   MEDIA QUERIES
    ======================================== */
 
 /* TABLETTE (768px et moins) */
