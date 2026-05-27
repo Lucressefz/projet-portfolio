@@ -107,3 +107,61 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
+// ========================================
+// SMOOTH SCROLL
+// ========================================
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+// ========================================
+// FORMULAIRE DE CONTACT localStorage
+// ========================================
+
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Récupère les valeurs
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone')?.value || '';
+        const message = document.getElementById('message').value;
+        
+        // Crée un objet avec les données
+        const formData = {
+            nom: name,
+            email: email,
+            telephone: phone,
+            message: message,
+            date: new Date().toLocaleString('fr-FR')
+        };
+        
+        // Récupère les messages existants
+        let messages = JSON.parse(localStorage.getItem('messages')) || [];
+        
+        // Ajoute le nouveau message
+        messages.push(formData);
+        
+        // Sauvegarde dans localStorage
+        localStorage.setItem('messages', JSON.stringify(messages));
+        
+        // Affiche un message de succès
+        alert(`Merci ${name} ! Votre message a été enregistré.`);
+        
+        // Réinitialise le formulaire
+        contactForm.reset();
+        
+        // Affiche les messages dans la console (pour vérifier)
+        console.log('Messages enregistrés:', messages);
+    });
+}
